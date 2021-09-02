@@ -1,0 +1,148 @@
+*,*:before,*:after{
+   padding: 0;
+   margin: 0;
+   border: 0;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+html,body{
+   line-height: 1;
+   font-size: 14px;   
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   width: 100%;
+   height: 100%
+}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+.form {
+    position: absolute;
+    left: 0;
+    right: 0;    
+    max-width: 550px;
+    height: 410px;
+    top: calc(50% - 210px);
+    margin: 0 auto;
+    color: #fff;
+    padding: 30px;
+    background-color: #333
+}
+.form *{
+    outline: none;
+}
+.form__body {
+    position: relative;
+}
+.form__item {
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+.form__input {
+    height: 50px;
+    padding: 0px 20px 0px 60px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;  
+    cursor: pointer;    
+}
+.form__input._error {
+    box-shadow: 0 0 15px red;
+}
+.form__input:focus{
+    box-shadow: 0 0 15px #7a956b;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #333;
+    font-size: 30px;
+}
+.checkbox._error .checkbox__label::before{
+    box-shadow: 0 0 15px red;
+}
+.checkbox__input {
+    display: none;
+}
+.checkbox__input:checked + .checkbox__label::after{
+    transform: scale(1);
+}
+.checkbox__label {
+    font-size: 16px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox__label::before {
+    content: '';
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 0px 10px 0px 0px;
+}
+.checkbox__label::after{
+    transition: transform 0.5s ease 0s;
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #40a80c;
+    border-radius: 4px;
+    transform: scale(0);
+}
+.checkbox__label a {
+    color: #7a956b;
+}
+.form__button {
+    width: 60%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #1f35fa;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+}
+.form__button:hover {
+    background-color: #40a80c;
+}
+.form__button:active {
+    top: 3px;
+    box-shadow: 0 2px 0 #15131b;
+}
+.forgot {
+   margin-top: 10px; 
+}
+.forgot a{
+    color: #fff    
+}
+.social{  
+    position: absolute;  
+    display: inline;    
+    top: 285px;
+    left: 350px;
+}
+.social a{  
+    font-size: 40px;
+    padding: 10px;
+    color: #fff
+}
+#messagePass{
+    color: red;
+    position: absolute;
+    top: 52px
+}
