@@ -6,5 +6,38 @@
     <title>Форма логіну</title>
 </head>
 <body>
+  <div class='wrapper'>
+    <div class="form">
+        <form action="#" id="form" class="form__body">
+            <div class="form__item"> 
+              <i class="fas fa-user-alt icon"></i>
+              <input type="text" name="name" id="formName" class="form__input _req fas fa-arrow-alt-circle-left" placeholder="Введіть логін">                 
+            </div>
+            <div class="form__item">
+              <i class="fas fa-lock icon"></i>
+              <input type="text" name="password" id="password" class="form__input _req" placeholder="Введіть пароль">
+              <p id="messagePass"></p>
+            </div>
+            <div class="form__item">
+              <i class="fas fa-envelope icon"></i>
+              <input type="text" name="email" id="formEmail" class="form__input _req _email" placeholder="E-mail*">
+            </div>
+            <div class="form__item">
+                <div class="checkbox">
+                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                    <label for="formAgreement" class="checkbox__label">Я даю згоду на обробку моїх даних.</label>
+                </div>
+            </div>              
+            <button type="submit" class="form__button">Реєстрація</button>
+            <div class="social">
+              <a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus"></i></a> 
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>                                                
+            </div>              
+        </form>
+        <div class="forgot">
+          <a href="https://www.google.com/" target="_blank">Forgot your password</a>
+        </div>          
+    </div>
+  </div>
 </body>
-</html>
+</html>пшв
